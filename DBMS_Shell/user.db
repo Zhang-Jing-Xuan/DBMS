@@ -1,0 +1,4 @@
+3 
+username varchar password varchar authorization integer 
+1
+root root 1 
