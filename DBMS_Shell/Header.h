@@ -12,6 +12,8 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <cstdio>
+#include <algorithm>
 using namespace std;
 
 #endif /* Header_h */
