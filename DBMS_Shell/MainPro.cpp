@@ -27,11 +27,13 @@ void createTable(SQL* sql)
     {
         table = new Table(sql);
         delete(table);
-        string sinsert = "insert into __Table__.db values(\""+sql->Get(2)+"\")";
-        char si[100];
-        strcpy(si,sinsert.c_str());
-        SQL *sql_si = new SQL(si);
-        insertRecord(sql_si);
+        if(sql->Get(2)!="__Table__.db"){
+            string sinsert = "insert into __Table__.db values(\""+sql->Get(2)+"\")";
+            char si[100];
+            strcpy(si,sinsert.c_str());
+            SQL *sql_si = new SQL(si);
+            insertRecord(sql_si);
+        }
     }
     
 }

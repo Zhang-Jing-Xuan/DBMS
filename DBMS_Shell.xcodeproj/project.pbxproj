@@ -38,13 +38,13 @@
 		8481A55F25A6FFA000834D70 /* Index.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Index.hpp; sourceTree = "<group>"; };
 		8481A56025A6FFA000834D70 /* result.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = result.txt; sourceTree = "<group>"; };
 		8481A56125A6FFA000834D70 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		8481A56225A6FFA000834D70 /* __Table__.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = __Table__.db; sourceTree = "<group>"; };
 		8481A56325A6FFA000834D70 /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
 		8481A56425A6FFA000834D70 /* Table.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Table.cpp; sourceTree = "<group>"; };
 		8481A56525A6FFA000834D70 /* Select.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Select.cpp; sourceTree = "<group>"; };
 		8481A56625A6FFA000834D70 /* Table.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Table.hpp; sourceTree = "<group>"; };
 		8481A56725A6FFA000834D70 /* SQLPro.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SQLPro.cpp; sourceTree = "<group>"; };
 		8481A56825A6FFA000834D70 /* MainPro.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MainPro.hpp; sourceTree = "<group>"; };
+		8481A57125A74C8A00834D70 /* __Table__.db */ = {isa = PBXFileReference; lastKnownFileType = text; path = __Table__.db; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,6 @@
 		8481A53B25A6FEB800834D70 /* DBMS_Shell */ = {
 			isa = PBXGroup;
 			children = (
-				8481A56225A6FFA000834D70 /* __Table__.db */,
 				8481A55D25A6FFA000834D70 /* Header.h */,
 				8481A55925A6FFA000834D70 /* Index.cpp */,
 				8481A55F25A6FFA000834D70 /* Index.hpp */,
@@ -93,6 +92,7 @@
 				8481A56625A6FFA000834D70 /* Table.hpp */,
 				8481A56325A6FFA000834D70 /* test.txt */,
 				8481A55A25A6FFA000834D70 /* user.db */,
+				8481A57125A74C8A00834D70 /* __Table__.db */,
 			);
 			path = DBMS_Shell;
 			sourceTree = "<group>";

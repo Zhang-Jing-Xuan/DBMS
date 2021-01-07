@@ -24,3 +24,4 @@ bool type_check(string *s,string type);
 Table* doselect(SQL *sql,int i);
 
 #endif /* Select_hpp */
+
