@@ -19,6 +19,7 @@ Table::Table(SQL *sql)//建表
     int cnt=0;
     while(sql->Get(cnt)!=""){
         cout<<"第"<<cnt<<"个词是: "<<sql->Get(cnt)<<endl;
+        cout<<"第"<<cnt<<"个有效词e类型是: "<<sql->type[cnt]<<endl;
         cnt++;
     }
     cout<<endl;
