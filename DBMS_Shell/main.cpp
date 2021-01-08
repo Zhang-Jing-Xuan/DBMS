@@ -86,9 +86,9 @@ int main()
 //    freopen("test.txt","r",stdin);
     while(login()==0);//直到用户名和密码匹配为止
     char s[100];
-    while(cout<<"mysql> ")
+    while(cout<<"my_dbms> ")
     {
-        gets(s);
+		gets_s(s);
         SQL *sql=new SQL(s);
         //此处不能用switch-case,因为switch不支持string类型的匹配
         if(sql->Get(0) == "create" && sql->Get(1) == "table")
