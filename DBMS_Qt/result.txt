@@ -1,0 +1,108 @@
+create table s(s# varchar(10),sname varchar(10),age integer,sex varchar(10))
+create table sc(s# varchar (10),c# varchar(10),grade integer)
+create table c(c# varchar(10),cname varchar(10),teacher varchar(10))
+
+alter table s add a varchar(10)
+alter table s drop s# integer
+alter table s add s# varchar
+
+delete from s where sex="m"
+delete from s where s#="s1"
+update s set age=00 where age=22
+drop table s
+
+--------------------------------------------------------------------------------
+drop table s
+create table s(s# varchar(10),sname varchar(10),age integer,sex varchar(10))
+insert into s values("s1","wang",20,"m")
+insert into s values("s2","liu",19,"m")
+insert into s values("s3","chen",22,"m")
+insert into s values("s4","wu",19,"m")
+insert into s values("s5","lou",21,"f")
+insert into s values("s8","dong",18,"f")
+select * from s
+delete from s where sex="f"
+update s set age=00 where sname="wang"
+select * from s
+alter table s add a float
+alter table s add s# varchar
+select * from s
+alter table s drop s# integer
+alter table s drop a float
+drop table s
+--------------------------------------------------------------------------------
+select * from s
+select sname from s
+select * from s where sname = "wang"
+select sname from s where age = 22 and s# = "s3"
+select sname from s where age > 20
+select s# from s where age <= 22
+select * from s where age = 21 and sname = "lou"
+select s# from s where s# = "s1" or age = 22
+select * from s where sname = "dong" or s# = "s4"
+
+select * from sc
+select * from s,sc
+select * from s,sc where s.s# = sc.s#
+select s.sname from s,sc where s.s# = sc.sname
+select s.sname from s,sc where s.s# = sc.s#
+select distinct s.sname from s,sc where s.s# = sc.s#
+
+create index s_age on s (age)
+select 18 from s_age on s
+
+select * from s where age=18
+
+create view s_view as select * from s
+drop view s_view
+
+create user panda 123456
+show user
+
+grant panda 123456
+show user
+revoke panda 123456
+show user
+
+drop user panda 123456
+show user
+--------------------------------------------------------------------------------
+create table stu  (num int,name char(20),height float);
+alter table s add A varchar(20);
+alter table s drop A varchar(20);
+insert into stu values (20092707,"abc",1.71);
+insert into stu values (20092708,"abc",1.87);
+delete from stu where num=20092707;
+select* from stu;
+create view s_view as select * from stu;
+drop view v;
+create user han han;
+drop user han han;
+drop table stu;
+
+
+
+insert into sc values ("s1","c1","80")
+insert into sc values ("s1","c2","70")
+insert into sc values ("s1","c3","85")
+insert into sc values ("s1","c4","90")
+insert into sc values ("s1","c5","70")
+insert into sc values ("s2","c1","85")
+insert into sc values ("s3","c1","90")
+insert into sc values ("s3","c2","85")
+insert into sc values ("s3","c3","95")
+insert into sc values ("s4","c1","75")
+insert into sc values ("s4","c4","70")
+insert into sc values ("s5","c1","70")
+insert into sc values ("s5","c2","60")
+insert into sc values ("s5","c3","80")
+insert into sc values ("s5","c5","65")
+insert into sc values ("s8","c1","90")
+insert into sc values ("s8","c3","95")
+create table c(c# varchar(10),cname varchar(10),teacher varchar(10))
+insert into c values("c4","physics","shi")
+update c set c#="c5" where cname="os"
+drop table sc
+select *from s
+select *from c
+select *from sc

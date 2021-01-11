@@ -1,0 +1,7 @@
+﻿  qt_index.cpp
+D:\cpp_from_git\DBMS_1.02_with_Qt\DBMS_Qt\DBMS_Qt\Table.hpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\cpp_from_git\DBMS_1.02_with_Qt\DBMS_Qt\DBMS_Qt\SQLPro.hpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\cpp_from_git\DBMS_1.02_with_Qt\DBMS_Qt\DBMS_Qt\Index.hpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\cpp_from_git\DBMS_1.02_with_Qt\DBMS_Qt\DBMS_Qt\Select.hpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\cpp_from_git\DBMS_1.02_with_Qt\DBMS_Qt\DBMS_Qt\qt_index.cpp(55): warning C4715: “<lambda_e260af98572d2a35b46110a380ca6dfa>::operator()”: 不是所有的控件路径都返回值
+  DBMS_Qt.vcxproj -> D:\cpp_from_git\DBMS_1.02_with_Qt\DBMS_Qt\x64\Debug\DBMS_Qt.exe
