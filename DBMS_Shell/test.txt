@@ -1,5 +1,4 @@
-root
-root
-select * from s,stu
-select * s
+-- 测试
+select * from s
+-- 退出
 exit

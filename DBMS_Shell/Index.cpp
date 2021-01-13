@@ -17,6 +17,7 @@ using namespace std;
 
 bool cmp(struct index a,struct index b)//排序的依据
 {
+    
     return strcmp(a.name,b.name)<0;
 }
 
@@ -112,7 +113,7 @@ void indexSelect(string table_file,string index_file,string name)
     /*    if(size_t == -1)
      {
      cout<<"Error:The value "<<name<<" isn't found"<<endl;
-     return 0;
+     return ;
      }*/
     
     fscanf(table,"%d",&col);

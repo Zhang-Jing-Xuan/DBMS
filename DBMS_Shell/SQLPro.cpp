@@ -17,7 +17,11 @@ SQL::SQL(char *s)
         while(s[i] == ' ')//去除空格
             i++;
         j=i;
-        
+        if(s[i]=='-'&&s[i+1]=='-'){
+            sql.push_back("-");
+            sql.push_back("-");
+            break;
+        }
         if(s[i] == '<')// <> <=
         {
             if(s[i+1] == '>' || s[i+1] == '=') j++;

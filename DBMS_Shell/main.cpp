@@ -5,13 +5,14 @@
 //  Created by admin on 2021/1/3.
 //  Copyright © 2021年 admin. All rights reserved.
 //
-
 #include "MainPro.hpp"
 #include "Table.hpp"
 #include "Select.hpp"
 #include <iostream>
 #include <string>
 #include <vector>
+#include <cstring>
+#include <cstdio>
 using namespace std;
 string login_username="";
 
@@ -81,12 +82,12 @@ int login()
 
 int main()
 {
-    cout<<__DATE__<<" "<<__TIME__<<endl;
+//    cout<<__DATE__<<" "<<__TIME__<<endl;
     init();
-//    freopen("test.txt","r",stdin);
-    while(login()==0);//直到用户名和密码匹配为止
+    freopen("test.txt","r",stdin);
+//    while(login()==0);//直到用户名和密码匹配为止
     char s[100];
-    while(cout<<"mysql> ")
+    while(true)
     {
         gets(s);
         SQL *sql=new SQL(s);
@@ -125,13 +126,15 @@ int main()
             showuser();
         else if(sql->Get(0) == "show" && sql->Get(1) == "table")
             showTable();
+        else if(sql->Get(0)=="-" && sql->Get(1)=="-")
+            continue;
         else if(sql->Get(0)=="exit"){
             cout<<"Bye~"<<endl;
             break;
         }
         else cout<<"Bad command!"<<endl;
     }
-//    fclose(stdin);
+    fclose(stdin);
     return 0;
 }
 //
