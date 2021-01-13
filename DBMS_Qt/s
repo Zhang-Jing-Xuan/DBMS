@@ -1,0 +1,9 @@
+4 
+s# varchar sname varchar age integer sex varchar 
+6
+s1 wang 20 m 
+s2 liu 19 m 
+s3 chen 22 m 
+s4 wu 19 m 
+s5 lou 21 f 
+s8 dong 18 f 

@@ -1,0 +1,20 @@
+3 
+s# varchar c# varchar grade integer 
+17
+s1 c1 80 
+s1 c2 70 
+s1 c3 85 
+s1 c4 90 
+s1 c5 70 
+s2 c1 85 
+s3 c1 90 
+s3 c2 85 
+s3 c3 95 
+s4 c1 75 
+s4 c4 70 
+s5 c1 70 
+s5 c2 60 
+s5 c3 80 
+s5 c5 65 
+s8 c1 90 
+s8 c3 95 
